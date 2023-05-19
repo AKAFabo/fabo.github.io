@@ -10,14 +10,76 @@
     <p>Método simple de ordenamiento que funciona comparando pares de elementos adyacentes y realizando intercambios si están en el orden incorrecto.</p>
     <p>Este proceso se repite hasta que la lista esté completamente ordenada. Fue desarrollado en 1956 por John McCarthy</p>
     <p>No es un ordenamiento muy eficiente, verifica en todas las pasadas si esta ordenada o no, por lo que usarla para listas grandes resulta en una perdida de tiempo</p>
-
+    <h2>Pasadas a mano: </h2>
+    <img src="BubbleSort.png"/>
     <h1>Ordenamiento Seleccion</h1>
     <h2>Acerca de:</h2>
     <p>Metodo simple de ordenamiento que divida la lista en 2 partes, una ordenada y otra no no ordenada. En cada iteracion intercambia el digito menor de la lista ordenada por el de la no ordenada</p>
     <p>Este proceso se repite n-1 veces, donde n es el largo de la lista</p>
     <p>Fue desarrollado en 1962 por Donald Knuth</p>
     <p>Es rapido para listas pequeñas, pero su complejidad de tiempo cuadrática hace que sea mas lenta para listas de mayores elementos</p>
-    <p>PRUEBA</p> 
+    <h2>Pasadas a mano: </h2>
+    <img src="Seleccion.png"/>
+    <h1>Ordenamiento Insercion</h1>
+    <h2>Acerca de:</h2>
+    <p>Es un método simple de ordenamiento que construye una lista ordenada de manera incremental.</p>
+    <p>Comienza con una lista de un solo elemento y en cada iteración, toma un elemento de la lista no ordenada y lo inserta en la posición correcta dentro de la lista ordenada.</p>
+    <p>No tiene un creador determinado ni tampoco una fecha en especifico de su creacion</p>
+    <p>No es tan eficiente para listas de gran tamaño, sin embargo, es bastante rápido para listas casi ordenadas, o listas pequeñas</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Insercion.png"/>
+    <h1>Ordenamiento Shell</h1>
+    <h2>Acerca de: </h2>
+    <p>Fue propuesto por Donald Shell en 1959, como una mejora del algoritmo de insercion</p>
+    <p>El ordenamiento divide la lista en sublistas más pequeñas, y esas sublistas las vuelve a dividir, y posteriormente las une otra vez para repetir el proceso</p>
+    <p>Es muchisimo mas eficiente que los ordenamientos anteriores, no obstante, no quiere decir que sea el ordenamiento mas eficientede todos, y no requiere de listas extras para ordenar la informacio</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Shell.png" />
+    <h1>Ordenamiento Quicksort</h1>
+    <h2>Acerca de: </h2>
+    <p>Es un algoritmo de ordenamiento eficiente y ampliamente utilizado. Utiliza una estrategia de divide y vencerás para ordenar los elementos de una lista. 
+        Quicksort selecciona un elemento llamado "pivote" de la lista y particiona los demás elementos en dos subconjuntos, uno con elementos menores que el pivote y otro con elementos mayores. 
+        Luego, aplica recursivamente el mismo proceso a los subconjuntos hasta que la lista esté completamente ordenada.</p>
+    <p>Fue desarrollado por Sir Tony Hoare en 1956</p>
+    <p>Es considerado uno de los algoritmos de ordenamiento mas eficientes, sin embargo, si su pivote se selecciona de manera suboptima puede llegar a tardar mas en ejecutarse</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Quicksort.png"/>
+    <h1>Ordenamiento Radix</h1>
+    <h2>Acerca de: </h2>
+    <p>El algoritmo radix analiza todas las posiciones numericas de los elementos de las listas, empezando por las unidades, hasta llegar a la posicion numerica mas alta</p>
+    <p>Fue desarrollado por Harold H. Seward en 1920, sin embargo, Seward solo propuso las raices de este ordenamiento</p>
+    <p>Al tener que crear cubetas, o listas adicionales para cada posicion numerica, usa mas memoria que muchos otros algoritmos, por lo que es eficiente para listas pequeñas y no tan eficiente para listas grandes</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Radix.png"/>
+    <h1>Ordenamiento Shake</h1>
+    <h2>Acerca de: </h2>
+    <p>Tambien llamado cocktail sort, es un hibrido del algoritmo burbuja, ya que este compara tanto a la izquierda como a la derecha para acelerar el proceso</p>
+    <p>No tiene un creador, ni una fecha de creacion asociada, no obstante, se creo posteriormente a la creacion del ordenamiento burbuja</p>
+    <p>Es solo un poco mas eficiente que el ordenamiento burbuja, un ejemplo es que si el ordenamiento recibe una lista de 10 elementos, este realizara 10 pasadas en toda la lista</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Shake.png"/>
+    <h1>Ordenamiento Merge</h1>
+    <h2>Acerca de: </h2>
+    <p>Desarrollado por John Von Neuman en 1945, es uno de los ordenamientos mas eficientes. Divide la lista recibida en varias sublistas, de ahi las ordena y luego las une en la lista recibida</p>
+    <p>El proceso de división y combinación en el Merge Sort garantiza que cada elemento se compara y se coloca en su posición correcta una vez, lo que asegura su rendimiento eficiente.</p>
+    <p>El algoritmo Merge Sort se puede aplicar a cualquier tipo de lista y no requiere estructuras de datos especiales.</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Merge.png"/>
+    <h1>Busqueda binaria</h1>
+    <h2>Acerca de: </h2>
+    <p>La búsqueda binaria es un algoritmo eficiente utilizado para encontrar un elemento específico en una lista ordenada. A diferencia de otros algoritmos de búsqueda que examinan los elementos uno por uno, la búsqueda binaria divide repetidamente la lista a la mitad, reduciendo así la búsqueda a la mitad en cada iteración.</p>
+    <p>El tiempo de ejecución de la búsqueda binaria es O(log n), donde "n" es el número de elementos en la lista. Debido a que divide la lista a la mitad en cada iteración, la búsqueda binaria tiene una complejidad logarítmica. Esto significa que incluso en listas grandes, la búsqueda binaria puede encontrar el elemento objetivo de manera eficiente.</p>
+    <p>La búsqueda binaria se remonta a la década de 1940 y fue desarrollada por varios científicos y matemáticos, incluyendo a John W. Mauchly y J. Presper Eckert.</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Binaria.png"/>
+    <h1>Busqueda secuencial</h1>
+    <h2>Acerca de: </h2>
+    <p>Algoritmo usado para buscar un elemento en una lista, no es tan eficiente ya que este revisa la lista desde la primera posicion hasta la ultima.</p>
+    <p>Debido a eso puede que el algoritmo o sea muy rapido, o extremadamente lento si el elemto a buscar esta en las ultimas posiciones y la lista es bastante extensa</p>
+    <p>No esta asociada con ningun autor ni ninguna fecha de creacion, ya que ha estado en la programacion desde sus principios</p>
+    <h2>Pasadas a mano: </h2>
+    <img src="Secuencial.png"/>
+
 
 
 </body>

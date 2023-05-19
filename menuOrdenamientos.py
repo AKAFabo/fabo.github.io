@@ -17,7 +17,7 @@ def Seleccion(lista):
             if lista[minimo] > lista[j]:
                 minimo=j
             aux=lista[minimo]
-            print(lista)
+        print(lista)
         lista[minimo]=lista[i]
         lista[i]=aux
         print(lista)
@@ -64,7 +64,7 @@ def quicksort(lista):
             if lista[j+1] < pivot:
                 lista[j+1],lista[i+1] = lista[i+1], lista[j+1]
                 i += 1
-            
+        print(lista)
         lista[0],lista[i] = lista[i],lista[0]
         primera = quicksort(lista[:i])
         segunda = quicksort(lista[i+1:])
@@ -211,7 +211,7 @@ def busquedaBinaria(lista,item):
     encontrado=False
     while primero <=ultimo and not encontrado:
         puntoMedio=(primero+ultimo)//2
-        print(f"El punto medio es {puntoMedio}")
+        print(f"El punto medio es {lista[puntoMedio]}")
         if lista[puntoMedio]==item:
             encontrado=True
         else:
@@ -226,6 +226,7 @@ def busquedaSecuencial(lista,nume):
     posicion=0
     encontrado=False
     while posicion < len(lista) and not encontrado:
+        print(lista[posicion])
         if lista[posicion]== nume:
             encontrado = True
         else:
@@ -245,13 +246,13 @@ def menu():
         print("9 = Busqueda binaria")
         print("10 = Busqueda secuencial")
 
-        lista = input("Ingrese la lista a ordenar, separada por comas: ")
+        lista = input("Ingrese la lista a ordenar, o a buscar: ")
         lista = lista.replace(" ", "")  # Eliminar espacios en blanco
         lista = lista.replace("[", "").replace("]", "")
         lista = [x for x in lista.split(",") if x.isdigit()]  # Filtrar solo caracteres numéricos
         lista = list(map(int, lista))  # Convertir los elementos a enteros
         
-        opcion = input("Ingrese el ordenamiento a correr: ")
+        opcion = input("Ingrese el ordenamiento o busqueda a correr: ")
 
         if opcion == '1':
             print(Burbuja(lista))
